@@ -111,7 +111,6 @@ while true; do
 	if [ "$comando" == "commitaddall" ]; then
 	        git -C "./"$d add .
 		printf "Digite el nombre del commit: "
-		read commit
 		git -C "./"$d commit -a -m "$commit"
 	fi
 
